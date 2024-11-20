@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>wasm</title>
+</head>
+<body>
+  <!-- <script src="test.js" async defer></script> -->
+<script type="module">
+  import init from "./test-module.js";
+  await init(); // Hello, world!
+
+// const wasmModule = await WebAssembly.instantiateStreaming(
+//     fetch('add.wasm'),
+//     importObject
+// );
+// console.log("xxxx=>",wasmModule)
+</script>
+</body>
+</html>

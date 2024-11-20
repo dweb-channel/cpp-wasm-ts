@@ -1,0 +1,22 @@
+{
+  "name": "cpp-wasm-ts",
+  "version": "1.0.0",
+  "description": "",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "emcc -lembind ./src/test.cpp -o ./test/test.js --emit-tsd test.d.ts -s MODULARIZE=1 -s EXPORT_ES6=1"
+  },
+  "keywords": [
+    "cpp",
+    "wasm",
+    "ts"
+  ],
+  "author": "waterbang",
+  "license": "ISC",
+  "bugs": "https://github.com/dweb-channel/cpp-wasm-ts",
+  "dependencies": {
+    "typescript": "^5.6.3"
+  }
+}
